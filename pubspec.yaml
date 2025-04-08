@@ -38,6 +38,8 @@ dependencies:
   provider: ^6.1.4
   # For Local Storage
   shared_preferences: ^2.5.3
+  # Provides internationalization and localization facilities
+  intl: ^0.20.2
 
 dev_dependencies:
   flutter_test:
