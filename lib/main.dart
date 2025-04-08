@@ -17,6 +17,10 @@ class MyApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate
       ],
+      supportedLocales: [
+        Locale('en'),
+        Locale('es')
+      ],
 
       home: HomeScreen(),
     );
