@@ -1,29 +1,35 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_locallization_example/providers/change_language_provider.dart';
 import 'package:flutter_locallization_example/screens/home_screen.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-void main (){
+import 'package:provider/provider.dart';
+
+void main() {
   runApp(MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      locale: Locale('es'),
-      localizationsDelegates: [
-        AppLocalizations.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => ChangeLanguageProvider()),
       ],
-      supportedLocales: [
-        Locale('en'),
-        Locale('es')
-      ],
+      child: MaterialApp(
+        locale: Locale('es'),
+        localizationsDelegates: [
+          AppLocalizations.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+        ],
+        supportedLocales: [Locale('en'), Locale('es')],
 
-      home: HomeScreen(),
+        home: HomeScreen(),
+      ),
     );
   }
 }
