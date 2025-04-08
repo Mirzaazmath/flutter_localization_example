@@ -1,0 +1,5 @@
+arb-dir: lib/l10n  # path of the language folder
+template-arb-file: app_en.arb  #Langauge template (initial language)
+output-localization-file: app_localizations.dart  # output file
+
+# cmd for generating language file : flutter gen-l10n
