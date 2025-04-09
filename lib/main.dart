@@ -18,17 +18,21 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => ChangeLanguageProvider()),
       ],
-      child: MaterialApp(
-        locale: Locale('es'),
-        localizationsDelegates: [
-          AppLocalizations.delegate,
-          GlobalMaterialLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-        ],
-        supportedLocales: [Locale('en'), Locale('es')],
+      child: Consumer<ChangeLanguageProvider>(
+        builder: (context,provider,child){
+          return MaterialApp(
+          locale: provider.appLocale,
+          localizationsDelegates: [
+            AppLocalizations.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+          ],
+          supportedLocales: [Locale('en'), Locale('es')],
 
-        home: HomeScreen(),
+          home: HomeScreen(),
+        );
+        }
       ),
     );
   }
