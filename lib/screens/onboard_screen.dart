@@ -31,7 +31,10 @@ class OnboardScreen extends StatelessWidget {
                   onSelected: (lang) {
                     if (lang == Language.english) {
                       provider.updateLanguage(Locale('en'));
-                    } else {
+                    } else if (lang == Language.hindi) {
+                      provider.updateLanguage(Locale('hi'));
+                    }
+                    else {
                       provider.updateLanguage(Locale('es'));
                     }
                   },
@@ -44,6 +47,10 @@ class OnboardScreen extends StatelessWidget {
                       PopupMenuItem(
                         value: Language.spanish,
                         child: Text("Spanish"),
+                      ),
+                      PopupMenuItem(
+                        value: Language.hindi,
+                        child: Text("Hindi"),
                       ),
                     ];
                   },

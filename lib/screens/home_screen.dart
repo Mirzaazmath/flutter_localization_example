@@ -25,10 +25,15 @@ class _HomeScreenState extends State<HomeScreen> {
           Consumer<ChangeLanguageProvider>(
             builder: (context, provider, child) {
               return PopupMenuButton(
+                icon: Icon(Icons.translate),
+                iconColor: Colors.white,
                 onSelected: (lang) {
                   if (lang == Language.english) {
                     provider.updateLanguage(Locale('en'));
-                  } else {
+                  } else if (lang == Language.hindi) {
+                    provider.updateLanguage(Locale('hi'));
+                  }
+                  else {
                     provider.updateLanguage(Locale('es'));
                   }
                 },
@@ -41,6 +46,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     PopupMenuItem(
                       value: Language.spanish,
                       child: Text("Spanish"),
+                    ),
+                    PopupMenuItem(
+                      value: Language.hindi,
+                      child: Text("Hindi"),
                     ),
                   ];
                 },

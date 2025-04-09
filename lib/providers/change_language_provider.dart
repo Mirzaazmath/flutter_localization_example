@@ -10,7 +10,9 @@ class ChangeLanguageProvider with ChangeNotifier {
     _appLocale = lang;
     if (lang == Locale('en')) {
       await sp.setString('language_code', 'en');
-    } else {
+    } else if(lang == Locale('hi')) {
+      await sp.setString('language_code', 'hi');
+    }else{
       await sp.setString('language_code', 'es');
     }
     notifyListeners();
