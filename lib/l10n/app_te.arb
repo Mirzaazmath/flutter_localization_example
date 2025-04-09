@@ -1,0 +1,19 @@
+{
+"helloWorld" : "!హలో వరల్డ్!",
+"welcome": "స్వాగతం! {userName}",
+ "fitnessClub" : "ఫిట్‌నెస్‌క్లబ్",
+  "welcomeBack" : "స్వాగతం",
+  "signIn" : "సైన్ ఇన్ చేయండి",
+  "signUp" : "సైన్అప్",
+  "helloSignIn" : "హలో\nసైన్ ఇన్ చేయండి!",
+  "gmail" : "ఇమెయిల్",
+  "password" : "పాస్వర్డ్",
+  "email" : "ఇమెయిల్",
+  "name" : "పేరు",
+  "createYourAccount" : "మీ ఖాతాను సృష్టించండి",
+  "dashboard" : "డాష్‌బోర్డ్",
+  "home" : "ఇల్లు",
+  "blog": "బ్లాగు",
+  "chat": "చాట్",
+  "profile": "ప్రొఫైల్"
+}
