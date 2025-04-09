@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class RegisterScreen extends StatelessWidget {
+  const RegisterScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [Theme.of(context).primaryColor, Theme.of(context).primaryColorDark],
@@ -13,7 +12,7 @@ class LoginScreen extends StatelessWidget {
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
-       
+
         body: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -22,7 +21,7 @@ class LoginScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(25),
                 child: Text(
-                  "Hello\nSign In!",
+                  "Create Your Account",
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -42,10 +41,18 @@ class LoginScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(height: 50,),
+                    Text("Name",style: TextStyle(color: Theme.of(context).primaryColor,fontWeight: FontWeight.w600,fontSize: 18),),
+                    TextFormField(
+                      decoration: InputDecoration(
+                          hintText: "Name"
+
+                      ),
+                    ),
+                    SizedBox(height: 30,),
                     Text("Gmail",style: TextStyle(color: Theme.of(context).primaryColor,fontWeight: FontWeight.w600,fontSize: 18),),
                     TextFormField(
                       decoration: InputDecoration(
-                        hintText: "E-mail"
+                          hintText: "E-mail"
 
                       ),
                     ),
@@ -68,7 +75,7 @@ class LoginScreen extends StatelessWidget {
                       ),
                       alignment: Alignment.center,
                       child: Text(
-                        "SIGN IN",
+                        "SIGN UP",
                         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,color: Colors.white),
                       ),
                     ),
