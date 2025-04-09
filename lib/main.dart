@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_locallization_example/providers/change_language_provider.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_locallization_example/screens/login_screen.dart';
 import 'package:flutter_locallization_example/screens/onboard_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -34,6 +35,10 @@ class MyApp extends StatelessWidget {
             }
           }
           return MaterialApp(
+            theme: ThemeData(
+              primaryColor: Color(0xffb61737),
+              primaryColorDark: Color(0xff2d1738)
+            ),
             debugShowCheckedModeBanner: false,
             locale:provider.appLocale,
             localizationsDelegates: [
@@ -43,7 +48,7 @@ class MyApp extends StatelessWidget {
               GlobalWidgetsLocalizations.delegate,
             ],
             supportedLocales: [Locale('en'), Locale('es')],
-            home: OnboardScreen(),
+            home: LoginScreen(),
           );
         },
       ),

@@ -12,7 +12,7 @@ class OnboardScreen extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [Color(0xffb61737), Color(0xff2d1738)],
+          colors: [Theme.of(context).primaryColor, Theme.of(context).primaryColorDark],
         ),
       ),
       child: Scaffold(
