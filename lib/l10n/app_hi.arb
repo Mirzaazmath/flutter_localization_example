@@ -1,0 +1,19 @@
+{
+"helloWorld" : "!हैलो वर्ल्ड!",
+"welcome": "स्वागत! {userName}",
+ "fitnessClub" : "फिटनेस क्लब",
+  "welcomeBack" : "वापसी पर स्वागत है",
+  "signIn" : "दाखिल करना",
+  "signUp" : "साइन अप करें",
+  "helloSignIn" : "हैलो\nदाखिल करना!",
+  "gmail" : "जीमेल",
+  "password" : "पासवर्ड",
+  "email" : "ईमेल",
+  "name" : "नाम",
+  "createYourAccount" : "अपना खाता बनाएं",
+  "dashboard" : "डैशबोर्ड",
+  "home" : "घर",
+  "blog": "ब्लॉग",
+  "chat": "बात करना",
+  "profile": "प्रोफ़ाइल"
+}
