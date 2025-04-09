@@ -3,6 +3,8 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_locallization_example/providers/change_language_provider.dart';
 import 'package:provider/provider.dart';
 
+import '../main.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
