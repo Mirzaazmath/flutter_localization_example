@@ -20,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         foregroundColor: Colors.white,
         backgroundColor: Theme.of(context).primaryColor,
-        title: Text("Dashboard", style: TextStyle(color: Colors.white)),
+        title: Text(AppLocalizations.of(context)!.dashboard, style: TextStyle(color: Colors.white)),
         actions: [
           Consumer<ChangeLanguageProvider>(
             builder: (context, provider, child) {
@@ -62,28 +62,28 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(Icons.home,color: Colors.white,size: 30,),
-                Text("Home",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w600),)
+                Text(AppLocalizations.of(context)!.home,style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w600),)
               ],
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(Icons.type_specimen,color: Colors.white,size: 26,),
-                Text("Blog",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w600),)
+                Text(AppLocalizations.of(context)!.blog,style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w600),)
               ],
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(Icons.chat_bubble,color: Colors.white,size: 26,),
-                Text("Chat",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w600),)
+                Text(AppLocalizations.of(context)!.chat,style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w600),)
               ],
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(Icons.person,color: Colors.white,size: 30,),
-                Text("Profile",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w600),)
+                Text(AppLocalizations.of(context)!.profile,style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w600),)
               ],
             )
           ],

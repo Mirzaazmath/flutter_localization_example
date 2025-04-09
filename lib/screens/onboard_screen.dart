@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_locallization_example/screens/login_screen.dart';
 import 'package:flutter_locallization_example/screens/register_screen.dart';
 import 'package:provider/provider.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../main.dart';
 import '../providers/change_language_provider.dart';
 
@@ -61,7 +61,7 @@ class OnboardScreen extends StatelessWidget {
 
               Icon(Icons.fitness_center, color: Colors.white, size: 80),
               Text(
-                "FITNESS CLUB",
+                AppLocalizations.of(context)!.fitnessClub,
                 style: TextStyle(
                   color: Colors.white,
 
@@ -70,7 +70,7 @@ class OnboardScreen extends StatelessWidget {
               ),
               Spacer(),
               Text(
-                "Welcome Back",
+                AppLocalizations.of(context)!.welcomeBack,
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -90,7 +90,7 @@ class OnboardScreen extends StatelessWidget {
                   ),
                   alignment: Alignment.center,
                   child: Text(
-                    "SIGN IN",
+                      AppLocalizations.of(context)!.signIn,
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -112,7 +112,7 @@ class OnboardScreen extends StatelessWidget {
                   ),
                   alignment: Alignment.center,
                   child: Text(
-                    "SIGN UP",
+                      AppLocalizations.of(context)!.signUp,
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   ),
                 ),

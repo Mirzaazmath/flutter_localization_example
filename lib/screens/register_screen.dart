@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'home_screen.dart';
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
@@ -23,7 +23,7 @@ class RegisterScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(25),
                 child: Text(
-                  "Create Your Account",
+                    AppLocalizations.of(context)!.createYourAccount,
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -43,26 +43,26 @@ class RegisterScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(height: 50,),
-                    Text("Name",style: TextStyle(color: Theme.of(context).primaryColor,fontWeight: FontWeight.w600,fontSize: 18),),
+                    Text(AppLocalizations.of(context)!.name,style: TextStyle(color: Theme.of(context).primaryColor,fontWeight: FontWeight.w600,fontSize: 18),),
                     TextFormField(
                       decoration: InputDecoration(
-                          hintText: "Name"
+                          hintText: AppLocalizations.of(context)!.name,
 
                       ),
                     ),
                     SizedBox(height: 30,),
-                    Text("Gmail",style: TextStyle(color: Theme.of(context).primaryColor,fontWeight: FontWeight.w600,fontSize: 18),),
+                    Text(AppLocalizations.of(context)!.gmail,style: TextStyle(color: Theme.of(context).primaryColor,fontWeight: FontWeight.w600,fontSize: 18),),
                     TextFormField(
                       decoration: InputDecoration(
-                          hintText: "E-mail"
+                          hintText: AppLocalizations.of(context)!.email,
 
                       ),
                     ),
                     SizedBox(height: 30,),
-                    Text("Password",style: TextStyle(color: Theme.of(context).primaryColor,fontWeight: FontWeight.w600,fontSize: 18),),
+                    Text(AppLocalizations.of(context)!.password,style: TextStyle(color: Theme.of(context).primaryColor,fontWeight: FontWeight.w600,fontSize: 18),),
                     TextFormField(
                       decoration: InputDecoration(
-                          hintText: "password"
+                          hintText: AppLocalizations.of(context)!.password,
 
                       ),
                     ),
@@ -81,7 +81,7 @@ class RegisterScreen extends StatelessWidget {
                         ),
                         alignment: Alignment.center,
                         child: Text(
-                          "SIGN UP",
+                            AppLocalizations.of(context)!.signUp,
                           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,color: Colors.white),
                         ),
                       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_locallization_example/screens/home_screen.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -23,7 +24,7 @@ class LoginScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(25),
                 child: Text(
-                  "Hello\nSign In!",
+                    AppLocalizations.of(context)!.helloSignIn,
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -43,18 +44,18 @@ class LoginScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(height: 50,),
-                    Text("Gmail",style: TextStyle(color: Theme.of(context).primaryColor,fontWeight: FontWeight.w600,fontSize: 18),),
+                    Text(AppLocalizations.of(context)!.gmail,style: TextStyle(color: Theme.of(context).primaryColor,fontWeight: FontWeight.w600,fontSize: 18),),
                     TextFormField(
                       decoration: InputDecoration(
-                        hintText: "E-mail"
+                        hintText: AppLocalizations.of(context)!.email
 
                       ),
                     ),
                     SizedBox(height: 30,),
-                    Text("Password",style: TextStyle(color: Theme.of(context).primaryColor,fontWeight: FontWeight.w600,fontSize: 18),),
+                    Text(AppLocalizations.of(context)!.password,style: TextStyle(color: Theme.of(context).primaryColor,fontWeight: FontWeight.w600,fontSize: 18),),
                     TextFormField(
                       decoration: InputDecoration(
-                          hintText: "password"
+                          hintText: AppLocalizations.of(context)!.password
 
                       ),
                     ),
@@ -73,7 +74,7 @@ class LoginScreen extends StatelessWidget {
                         ),
                         alignment: Alignment.center,
                         child: Text(
-                          "SIGN IN",
+                          AppLocalizations.of(context)!.signIn,
                           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,color: Colors.white),
                         ),
                       ),

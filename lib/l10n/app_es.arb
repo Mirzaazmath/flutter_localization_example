@@ -1,4 +1,19 @@
 {
 "helloWorld" : "!Hola Mundo!",
-"welcome": "bienvenida! {userName}"
+"welcome": "bienvenida! {userName}",
+ "fitnessClub" : "CLUB DE FITNESS",
+  "welcomeBack" : "Bienvenido de nuevo",
+  "signIn" : "Iniciar sesión",
+  "signUp" : "Inscribirse",
+  "helloSignIn" : "Hola\nIniciar sesión!",
+  "gmail" : "Correo electrónico",
+  "password" : "Contraseña",
+  "email" : "Correo electrónico",
+  "name" : "Nombre",
+  "createYourAccount" : "Crea tu cuenta",
+  "dashboard" : "Panel",
+  "home" : "Hogar",
+  "blog": "Blog",
+  "chat": "Charlar",
+  "profile": "Perfil"
 }
