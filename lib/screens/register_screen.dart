@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'home_screen.dart';
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
 
@@ -65,18 +67,23 @@ class RegisterScreen extends StatelessWidget {
                       ),
                     ),
                     Spacer(),
-                    Container(
-                      height: 60,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [Theme.of(context).primaryColor, Theme.of(context).primaryColorDark],
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
+                      },
+                      child: Container(
+                        height: 60,
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            colors: [Theme.of(context).primaryColor, Theme.of(context).primaryColorDark],
+                          ),
+                          borderRadius: BorderRadius.circular(100),
                         ),
-                        borderRadius: BorderRadius.circular(100),
-                      ),
-                      alignment: Alignment.center,
-                      child: Text(
-                        "SIGN UP",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,color: Colors.white),
+                        alignment: Alignment.center,
+                        child: Text(
+                          "SIGN UP",
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,color: Colors.white),
+                        ),
                       ),
                     ),
                     Spacer(),

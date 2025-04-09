@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_locallization_example/screens/home_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -58,18 +59,23 @@ class LoginScreen extends StatelessWidget {
                       ),
                     ),
                     Spacer(),
-                    Container(
-                      height: 60,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [Theme.of(context).primaryColor, Theme.of(context).primaryColorDark],
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
+                      },
+                      child: Container(
+                        height: 60,
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            colors: [Theme.of(context).primaryColor, Theme.of(context).primaryColorDark],
+                          ),
+                          borderRadius: BorderRadius.circular(100),
                         ),
-                        borderRadius: BorderRadius.circular(100),
-                      ),
-                      alignment: Alignment.center,
-                      child: Text(
-                        "SIGN IN",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,color: Colors.white),
+                        alignment: Alignment.center,
+                        child: Text(
+                          "SIGN IN",
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,color: Colors.white),
+                        ),
                       ),
                     ),
                     Spacer(),

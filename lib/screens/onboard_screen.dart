@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_locallization_example/screens/login_screen.dart';
+import 'package:flutter_locallization_example/screens/register_screen.dart';
 import 'package:provider/provider.dart';
 
 import '../main.dart';
@@ -76,33 +78,43 @@ class OnboardScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 40),
-              Container(
-                height: 60,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white),
-                  borderRadius: BorderRadius.circular(100),
-                ),
-                alignment: Alignment.center,
-                child: Text(
-                  "SIGN IN",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
+              GestureDetector(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginScreen()));
+                },
+                child: Container(
+                  height: 60,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.white),
+                    borderRadius: BorderRadius.circular(100),
+                  ),
+                  alignment: Alignment.center,
+                  child: Text(
+                    "SIGN IN",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
                   ),
                 ),
               ),
               SizedBox(height: 20),
-              Container(
-                height: 60,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(100),
-                ),
-                alignment: Alignment.center,
-                child: Text(
-                  "SIGN UP",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              GestureDetector(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>RegisterScreen()));
+                },
+                child: Container(
+                  height: 60,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(100),
+                  ),
+                  alignment: Alignment.center,
+                  child: Text(
+                    "SIGN UP",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
                 ),
               ),
               Spacer(),
