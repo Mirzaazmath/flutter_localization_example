@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
               GlobalCupertinoLocalizations.delegate,
               GlobalWidgetsLocalizations.delegate,
             ],
-            supportedLocales: [Locale('en'), Locale('es'),Locale('hi'),Locale('ur'),Locale('te')],
+            supportedLocales: [Locale('en'), Locale('es'),Locale('hi'),Locale('ur'),Locale('te'),Locale('ta')],
             home: OnboardScreen(),
           );
         },
@@ -54,4 +54,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-enum Language { english, spanish,hindi,urdu,telugu}
+enum Language { english, spanish,hindi,urdu,telugu,tamil}

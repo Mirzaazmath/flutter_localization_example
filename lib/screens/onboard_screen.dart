@@ -37,6 +37,8 @@ class OnboardScreen extends StatelessWidget {
                       provider.updateLanguage(Locale('ur'));
                     }else if (lang == Language.telugu) {
                       provider.updateLanguage(Locale('te'));
+                    }else if (lang == Language.tamil) {
+                      provider.updateLanguage(Locale('ta'));
                     } else {
                       provider.updateLanguage(Locale('es'));
                     }
@@ -62,6 +64,10 @@ class OnboardScreen extends StatelessWidget {
                       PopupMenuItem(
                         value: Language.telugu,
                         child: Text("Telugu"),
+                      ),
+                      PopupMenuItem(
+                        value: Language.tamil,
+                        child: Text("Tamil"),
                       ),
                     ];
                   },
