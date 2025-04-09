@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_locallization_example/providers/change_language_provider.dart';
 import 'package:provider/provider.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../main.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       body: Padding(padding: EdgeInsets.all(20),
-      child: Center(child: Text("Welcome! Mirza Azmathullah Baig",style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 22),)),),
+      child: Center(child: Text(AppLocalizations.of(context)!.welcome("Mirza Azmathullah Baig"),style: TextStyle(color: Theme.of(context).primaryColorDark,fontSize: 22),)),),
       bottomNavigationBar: Container(
         height: 80,
         padding: EdgeInsets.symmetric(horizontal: 20),
