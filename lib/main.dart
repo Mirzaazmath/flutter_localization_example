@@ -26,8 +26,15 @@ class MyApp extends StatelessWidget {
       ],
       child: Consumer<ChangeLanguageProvider>(
         builder: (context, provider, child) {
+          if (provider.appLocale == null) {
+            if (langCode.isEmpty) {
+              provider.updateLanguage(Locale('en'));
+            } else {
+              provider.updateLanguage(Locale(langCode));
+            }
+          }
           return MaterialApp(
-            locale: provider.appLocale,
+            locale:provider.appLocale,
             localizationsDelegates: [
               AppLocalizations.delegate,
               GlobalMaterialLocalizations.delegate,
@@ -35,7 +42,6 @@ class MyApp extends StatelessWidget {
               GlobalWidgetsLocalizations.delegate,
             ],
             supportedLocales: [Locale('en'), Locale('es')],
-
             home: HomeScreen(),
           );
         },
