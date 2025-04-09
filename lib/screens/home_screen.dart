@@ -32,8 +32,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     provider.updateLanguage(Locale('en'));
                   } else if (lang == Language.hindi) {
                     provider.updateLanguage(Locale('hi'));
-                  }  else if (lang == Language.urdu) {
+                  }else if (lang == Language.urdu) {
                     provider.updateLanguage(Locale('ur'));
+                  }else if (lang == Language.telugu) {
+                    provider.updateLanguage(Locale('te'));
                   } else {
                     provider.updateLanguage(Locale('es'));
                   }
@@ -55,6 +57,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     PopupMenuItem(
                       value: Language.urdu,
                       child: Text("Urdu"),
+                    ),
+                    PopupMenuItem(
+                      value: Language.telugu,
+                      child: Text("Telugu"),
                     ),
                   ];
                 },
