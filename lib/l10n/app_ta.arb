@@ -1,0 +1,19 @@
+{
+"helloWorld" : "!ஹலோ வேர்ல்ட்!",
+"welcome": "வரவேற்கிறேன்! {userName}",
+ "fitnessClub" : "உடற்பயிற்சி கிளப்",
+  "welcomeBack" : "வரவேற்கிறோம்",
+  "signIn" : "உள்நுழைக",
+  "signUp" : "பதிவு",
+  "helloSignIn" : "ஹலோ\nஉள்நுழைக!",
+  "gmail" : "ஜிமெயில்",
+  "password" : "கடவுச்சொல்",
+  "email" : "மின்னஞ்சல்",
+  "name" : "பெயர்",
+  "createYourAccount" : "உங்கள் கணக்கை உருவாக்கவும்",
+  "dashboard" : "டாஷ்போர்டு",
+  "home" : "வீடு",
+  "blog": "வலைப்பதிவு",
+  "chat": "அரட்டை",
+  "profile": "சுயவிவரம்"
+}
