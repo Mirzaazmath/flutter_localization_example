@@ -1,0 +1,19 @@
+{
+"helloWorld" : "!ہیلو ورلڈ!",
+"welcome": "خوش آمدید! {userName}",
+ "fitnessClub" : "فٹنس کلب",
+  "welcomeBack" : "استقبال واپس",
+  "signIn" : "سائن ان",
+  "signUp" : "سائن اپ",
+  "helloSignIn" : "ہیلو\nسائن ان!",
+  "gmail" : "جی میل",
+  "password" : "پاس ورڈ",
+  "email" : "ای میل",
+  "name" : "نام",
+  "createYourAccount" : "اپنا اکاؤنٹ بنائیں",
+  "dashboard" : "ڈیش بورڈ",
+  "home" : "گھر",
+  "blog": "بلاگ",
+  "chat": "چیٹ",
+  "profile": "پروفائل"
+}
