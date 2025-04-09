@@ -7,5 +7,21 @@
         "type": "String"
       }
     }
-  }
+  },
+  "fitnessClub" : "FITNESS CLUB",
+  "welcomeBack" : "Welcome Back",
+  "signIn" : "Sign In",
+  "signUp" : "Sign Up",
+  "helloSignIn" : "Hello\nSign In!",
+  "gmail" : "Gmail",
+  "password" : "Password",
+  "email" : "E-mail",
+  "name" : "Name",
+  "createYourAccount" : "Create your Account",
+  "dashboard" : "Dashboard",
+  "home" : "Home",
+  "blog": "Blog",
+  "chat": "Chat",
+  "profile": "Profile"
+
 }
