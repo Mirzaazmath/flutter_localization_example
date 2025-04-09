@@ -54,4 +54,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-enum Language { english, spanish,hindi}
+enum Language { english, spanish,hindi,urdu}

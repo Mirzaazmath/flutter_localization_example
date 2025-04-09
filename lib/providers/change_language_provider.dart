@@ -12,6 +12,8 @@ class ChangeLanguageProvider with ChangeNotifier {
       await sp.setString('language_code', 'en');
     } else if(lang == Locale('hi')) {
       await sp.setString('language_code', 'hi');
+    } else if(lang == Locale('ur')) {
+      await sp.setString('language_code', 'ur');
     }else{
       await sp.setString('language_code', 'es');
     }
