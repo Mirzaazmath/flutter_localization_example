@@ -13,5 +13,6 @@ class ChangeLanguageProvider with ChangeNotifier {
     } else {
       await sp.setString('language_code', 'es');
     }
+    notifyListeners();
   }
 }
