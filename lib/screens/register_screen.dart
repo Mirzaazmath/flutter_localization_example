@@ -22,13 +22,24 @@ class RegisterScreen extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.all(25),
-                child: Text(
-                    AppLocalizations.of(context)!.createYourAccount,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize:24,
-                  ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                        AppLocalizations.of(context)!.createYourAccount,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize:24,
+                      ),
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.close, color: Colors.white, size: 30),
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                    ),
+                  ],
                 ),
               ),
               Expanded(child: Container(
