@@ -10,15 +10,15 @@ class ChangeLanguageProvider with ChangeNotifier {
     _appLocale = lang;
     if (lang == Locale('en')) {
       await sp.setString('language_code', 'en');
-    } else if(lang == Locale('hi')) {
+    } else if (lang == Locale('hi')) {
       await sp.setString('language_code', 'hi');
-    } else if(lang == Locale('ur')) {
+    } else if (lang == Locale('ur')) {
       await sp.setString('language_code', 'ur');
-    }else if(lang == Locale('te')) {
+    } else if (lang == Locale('te')) {
       await sp.setString('language_code', 'te');
-    }else if(lang == Locale('ta')) {
+    } else if (lang == Locale('ta')) {
       await sp.setString('language_code', 'ta');
-    }else{
+    } else {
       await sp.setString('language_code', 'es');
     }
     notifyListeners();

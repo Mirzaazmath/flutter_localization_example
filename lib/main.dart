@@ -36,17 +36,24 @@ class MyApp extends StatelessWidget {
           return MaterialApp(
             theme: ThemeData(
               primaryColor: Color(0xffb61737),
-              primaryColorDark: Color(0xff2d1738)
+              primaryColorDark: Color(0xff2d1738),
             ),
             debugShowCheckedModeBanner: false,
-            locale:provider.appLocale,
+            locale: provider.appLocale,
             localizationsDelegates: [
               AppLocalizations.delegate,
               GlobalMaterialLocalizations.delegate,
               GlobalCupertinoLocalizations.delegate,
               GlobalWidgetsLocalizations.delegate,
             ],
-            supportedLocales: [Locale('en'), Locale('es'),Locale('hi'),Locale('ur'),Locale('te'),Locale('ta')],
+            supportedLocales: [
+              Locale('en'),
+              Locale('es'),
+              Locale('hi'),
+              Locale('ur'),
+              Locale('te'),
+              Locale('ta'),
+            ],
             home: OnboardScreen(),
           );
         },
@@ -54,4 +61,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-enum Language { english, spanish,hindi,urdu,telugu,tamil}
+
+enum Language { english, spanish, hindi, urdu, telugu, tamil }

@@ -14,7 +14,10 @@ class OnboardScreen extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [Theme.of(context).primaryColor, Theme.of(context).primaryColorDark],
+          colors: [
+            Theme.of(context).primaryColor,
+            Theme.of(context).primaryColorDark,
+          ],
         ),
       ),
       child: Scaffold(
@@ -33,11 +36,11 @@ class OnboardScreen extends StatelessWidget {
                       provider.updateLanguage(Locale('en'));
                     } else if (lang == Language.hindi) {
                       provider.updateLanguage(Locale('hi'));
-                    }else if (lang == Language.urdu) {
+                    } else if (lang == Language.urdu) {
                       provider.updateLanguage(Locale('ur'));
-                    }else if (lang == Language.telugu) {
+                    } else if (lang == Language.telugu) {
                       provider.updateLanguage(Locale('te'));
-                    }else if (lang == Language.tamil) {
+                    } else if (lang == Language.tamil) {
                       provider.updateLanguage(Locale('ta'));
                     } else {
                       provider.updateLanguage(Locale('es'));
@@ -57,10 +60,7 @@ class OnboardScreen extends StatelessWidget {
                         value: Language.hindi,
                         child: Text("Hindi"),
                       ),
-                      PopupMenuItem(
-                        value: Language.urdu,
-                        child: Text("Urdu"),
-                      ),
+                      PopupMenuItem(value: Language.urdu, child: Text("Urdu")),
                       PopupMenuItem(
                         value: Language.telugu,
                         child: Text("Telugu"),
@@ -82,15 +82,10 @@ class OnboardScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-
               Icon(Icons.fitness_center, color: Colors.white, size: 80),
               Text(
                 AppLocalizations.of(context)!.fitnessClub,
-                style: TextStyle(
-                  color: Colors.white,
-
-                  fontSize:20,
-                ),
+                style: TextStyle(color: Colors.white, fontSize: 20),
               ),
               Spacer(),
               Text(
@@ -98,13 +93,16 @@ class OnboardScreen extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontSize:35,
+                  fontSize: 35,
                 ),
               ),
               SizedBox(height: 40),
               GestureDetector(
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginScreen()));
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => LoginScreen()),
+                  );
                 },
                 child: Container(
                   height: 60,
@@ -114,7 +112,7 @@ class OnboardScreen extends StatelessWidget {
                   ),
                   alignment: Alignment.center,
                   child: Text(
-                      AppLocalizations.of(context)!.signIn,
+                    AppLocalizations.of(context)!.signIn,
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -125,8 +123,11 @@ class OnboardScreen extends StatelessWidget {
               ),
               SizedBox(height: 20),
               GestureDetector(
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>RegisterScreen()));
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => RegisterScreen()),
+                  );
                 },
                 child: Container(
                   height: 60,
@@ -136,7 +137,7 @@ class OnboardScreen extends StatelessWidget {
                   ),
                   alignment: Alignment.center,
                   child: Text(
-                      AppLocalizations.of(context)!.signUp,
+                    AppLocalizations.of(context)!.signUp,
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   ),
                 ),

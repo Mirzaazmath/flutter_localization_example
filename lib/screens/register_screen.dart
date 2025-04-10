@@ -25,12 +25,14 @@ class RegisterScreen extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                        AppLocalizations.of(context)!.createYourAccount,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize:24,
+                    Expanded(
+                      child: Text(
+                          AppLocalizations.of(context)!.createYourAccount,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize:24,
+                        ),
                       ),
                     ),
                     IconButton(
