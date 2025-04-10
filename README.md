@@ -8,6 +8,21 @@ A new Flutter project.
 
 <img src ="https://github.com/Mirzaazmath/flutter_localization_example/blob/main/output/LanguageListScreenshot.png" height ="400">
 
+# English
+<table>
+  <tr>
+     <td>OnBoard Screen</td>
+     <td>Login Screen</td>
+    <td>Register Screen</td>
+     </tr>
+  <tr>
+    <td><img src="https://github.com/Mirzaazmath/flutter_localization_example/blob/main/output/LanguageListScreenshot.png" height="400"></td>
+    <td><img src ="https://github.com/Mirzaazmath/flutter_localization_example/blob/main/output/LanguageListScreenshot.png" height="400"></td>
+    <td><img src ="https://github.com/Mirzaazmath/flutter_localization_example/blob/main/output/LanguageListScreenshot.png" height ="400"> </td>
+    </tr>
+   
+ </table>
+
 
 
 This project is a starting point for a Flutter application.
