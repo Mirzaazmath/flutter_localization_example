@@ -98,7 +98,6 @@ A new Flutter project.
    
  </table>
 
-happy coding 😁 
 
 This project is a starting point for a Flutter application.
 
